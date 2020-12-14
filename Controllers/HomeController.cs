@@ -34,7 +34,7 @@ namespace HttpClientFactoryExample.Controllers
         [Route("exampletwo")]
         public async Task<string> ExampleTwo()
         {
-            var client = _httpClientFactory.CreateClient("microsoft");
+            var client = _httpClientFactory.CreateClient("osmankurt");
             client.BaseAddress = new Uri("http://www.osmankurt.net");
             var result = await client.GetStringAsync("/");
             return result;

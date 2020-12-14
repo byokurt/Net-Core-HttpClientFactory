@@ -27,9 +27,9 @@ namespace HttpClientFactoryExample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpClient("microsoft", c =>
+            services.AddHttpClient("osmankurt", c =>
             {
-                c.BaseAddress = new Uri("https://www.osmankurt.net");
+                c.BaseAddress = new Uri("http://www.osmankurt.net");
                 c.DefaultRequestHeaders.Add("CustomHeaderKey", "for-example-one");
             });
 

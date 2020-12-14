@@ -9,7 +9,7 @@ namespace HttpClientFactoryExample.Helper
 
         public ExampleHttpClient(HttpClient httpClient)
         {
-            httpClient.BaseAddress = new Uri("https://www.osmankurt.net/");
+            httpClient.BaseAddress = new Uri("http://www.osmankurt.net/");
             httpClient.DefaultRequestHeaders.Add("ExampleHeaderKey", "for-example-three");
             Client = httpClient;
         }
